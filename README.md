@@ -27,6 +27,15 @@ The scanner also checks uv caches for `litellm_init.pth`.
 
 No `pip` dependency is required for detection.
 
+## Supported Operating Systems
+
+- macOS: supported
+- Linux: supported
+- WSL: supported when the Python environments live inside the Linux filesystem
+- Windows (native): not currently supported
+
+Current detection logic assumes Unix-style environment layouts such as `bin/python`, and checks Unix/macOS cache locations like `~/.cache/uv` and `~/Library/Caches/uv`. Native Windows support would require additional handling for layouts such as `Scripts/python.exe` and Windows-specific cache directories.
+
 ## Usage
 
 Run the scanner:
