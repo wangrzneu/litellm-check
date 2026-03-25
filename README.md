@@ -1,5 +1,7 @@
 # litellm-check
 
+[![CI](https://github.com/wangrzneu/litellm-check/actions/workflows/ci.yml/badge.svg)](https://github.com/wangrzneu/litellm-check/actions/workflows/ci.yml)
+
 Scan local Python environments for malicious `litellm` installs and leftover payload files.
 
 An environment is treated as compromised when either of these conditions is true:
